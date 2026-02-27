@@ -1,0 +1,21 @@
+function getPermissions(role) {
+  const permissions = [];
+  switch (role) {
+    case "מנהל":
+      permissions.push("הכל");
+      break;
+    case "סגן מנהל":
+      permissions.push("כמעט הכל");
+      break;
+    case "מזכיר":
+      permissions.push("כלום וחצי");
+      break;
+    case "עובד":
+      permissions.push("כלום");
+      break;
+    default:
+      permissions.push("כלום");
+      break;
+  }
+  return permissions;
+}
